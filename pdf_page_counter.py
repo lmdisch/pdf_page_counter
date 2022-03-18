@@ -88,7 +88,7 @@ def runFiles(folder):
 	my_root_progress['maximum'] = len(filesDict)
 
 	for name, value in filesDict.items():
-		name - name.encode('utf-8')
+		name = name.encode('utf-8')
 		counter += 1
 		my_root_progress['value'] = counter
 		my_root_progress.update()
